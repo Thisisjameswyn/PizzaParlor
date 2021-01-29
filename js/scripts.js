@@ -10,12 +10,14 @@ function Pizza(size, topping1, topping2, topping3)  {
 Pizza.prototype.calcCharge = function() {
   this.price = this.size;
 
-  if(this.toppingAmount > 2) {
+  if(this.toppingAmount == 3) {
     this.price += 6;
-  } else if (this.toppingAmount < 2) {
+  } else if (this.toppingAmount == 2) {
+    this.price += 4;
+  } else if (this.toppingAmount == 1) {
     this.price += 2;
   } else {
-    this.price += 4;
+    this.price += 0;
   }
 }
 

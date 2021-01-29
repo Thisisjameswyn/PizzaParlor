@@ -28,10 +28,19 @@ This is my fourth week project for Epicodus.  The objective is to take an input 
 
 * Describe: Pizza.prototype.calcCharge()
 Test: "It should calculate the cost to be 0 if no size or toppings are selected"
-Expect(calcCharge(none, none, none, none).toEqual([0]);
+Expect(calcCharge(0, 0, 0, 0).toEqual([0]);
 
 * Test: "It should calculate the cost to be 8 if large size and no toppings are selected"
-Expect(calcCharge(L, none, none, none).toEqual([8]);
+Expect(calcCharge(3, 0, 0, 0).toEqual([8]);
+
+* Test: "It should calculate the cost to be 10 if large size and one topping is selected"
+Expect(calcCharge(3, 1, 0, 0).toEqual([10]);
+
+* Test: "It should calculate the cost to be 12 if large size and two toppings are selected"
+Expect(calcCharge(3, 1, 1, 0).toEqual([12]);
+
+* Test: "It should calculate the cost to be 14 if large size and 3 toppings are selected"
+Expect(calcCharge(3, 1, 1, 1).toEqual([14]);
 
 
 

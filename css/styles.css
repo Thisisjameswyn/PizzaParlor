@@ -7,6 +7,10 @@ body{
 
 .t2{
   float:right;
-  color:blue;
-  position:;
+  color:red;
+  margin-left: 30%;
+}
+
+h2{
+  margin-left: 10%;
 }
