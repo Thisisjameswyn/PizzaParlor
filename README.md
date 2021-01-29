@@ -30,8 +30,8 @@ This is my fourth week project for Epicodus.  The objective is to take an input 
 Test: "It should calculate the cost to be 0 if no size or toppings are selected"
 Expect(calcCharge(none, none, none, none).toEqual([0]);
 
-* Test: "It should calculate the cost to be 0 if no size or toppings are selected"
-Expect(numberedArray(1).toEqual([0, "Beep!"])
+* Test: "It should calculate the cost to be 8 if large size and no toppings are selected"
+Expect(calcCharge(L, none, none, none).toEqual([8]);
 
 
 
