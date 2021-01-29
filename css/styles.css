@@ -1,5 +1,12 @@
 body{
-  background-color: blanchedalmond;
+  background-color: rgb(255, 247, 234);
   border: 15px solid red;
   margin: 30px;
+  height: 600px;
+}
+
+.t2{
+  float:right;
+  color:blue;
+  position:;
 }

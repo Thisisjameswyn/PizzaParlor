@@ -22,10 +22,13 @@ Pizza.prototype.calcCharge = function() {
 $(document).ready(function()  {
   $("form#pizza-submit").submit(function(event) {
     event.preventDefault();
+    
     let pizzaPie = new Pizza(parseInt($("#size").val()),parseInt($("#topping1").val()),parseInt($("#topping2").val()),parseInt($("#topping3").val()));
+    
     console.log(pizzaPie);
     pizzaPie.calcCharge();
     console.log(pizzaPie.price);
+    
     $("#order").text(`We have you booked for ${$("#size option:selected").text()} with ${$("#topping1 option:selected").text()}, the total price is  ${pizzaPie.price} dollars!  Better have my money ready.`)
     // let pizzaTime = $("#movie option:selected").text();
   });
