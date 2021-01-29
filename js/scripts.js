@@ -26,7 +26,7 @@ $(document).ready(function()  {
     console.log(pizzaPie);
     pizzaPie.calcCharge();
     console.log(pizzaPie.price);
-    $("#order").text(`We have you booked for ${$("#size option:selected").text()} with ${$("#topping1 option:selected").text()}, the total price is  ${pizzaPie.price} dollars!`)
+    $("#order").text(`We have you booked for ${$("#size option:selected").text()} with ${$("#topping1 option:selected").text()}, the total price is  ${pizzaPie.price} dollars!  Better have my money ready.`)
     // let pizzaTime = $("#movie option:selected").text();
   });
 });
