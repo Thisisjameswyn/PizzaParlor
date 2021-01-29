@@ -8,13 +8,7 @@ function Pizza(size, topping1, topping2, topping3)  {
 }
 
 Pizza.prototype.calcCharge = function() {
-  if(this.size == 2)  {
-    this.price += 8;
-  } else if (this.size == 1)  {
-    this.price += 6;
-  } else {
-    this. price += 4;
-  }
+  this.price = this.size;
 
   if(this.toppingAmount > 2) {
     this.price += 6;
@@ -23,10 +17,6 @@ Pizza.prototype.calcCharge = function() {
   } else {
     this.price += 4;
   }
-
-  //calc price for topping nunmber
-
-  //calc price for special toppings
 }
 
 $(document).ready(function()  {
@@ -36,7 +26,7 @@ $(document).ready(function()  {
     console.log(pizzaPie);
     pizzaPie.calcCharge();
     console.log(pizzaPie.price);
-    
+    $("#order").text(`We have you booked for ${$("#size option:selected").text()} with ${$("#topping1 option:selected").text()}, the total price is  ${pizzaPie.price} dollars!`)
     // let pizzaTime = $("#movie option:selected").text();
   });
 });
