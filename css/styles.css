@@ -1,8 +1,14 @@
 body{
-  background-color: rgb(255, 247, 234);
+  background-color: rgb(253, 255, 223);
   border: 15px solid red;
+  border-radius: 20px;
   margin: 30px;
   height: 600px;
+}
+
+.t1{
+  color: red;
+  font-family: monospace;
 }
 
 .t2{
