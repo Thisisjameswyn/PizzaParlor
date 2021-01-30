@@ -1,15 +1,17 @@
 body{
-  background-color: rgb(253, 255, 223);
-  border: 15px solid red;
+  background-color: rgb(254, 255, 233);
+  border: 15px solid  red;
   border-radius: 20px;
   margin: 30px;
   height: 600px;
+  color:blue;
 }
 
 .t1{
   color: red;
   font-family: 'Londrina Solid', cursive;
   font-size: 40px;
+
 }
 
 .t2{
@@ -17,8 +19,19 @@ body{
   float:right;
   color:red;
   margin-left: 20%;
+  text-decoration: underline blue;
 }
 
 h2{
   margin-left: 10%;
+}
+
+#izz{
+  font-size: 60px;;
+}
+
+#order{
+  border:5px solid blue;
+  padding-bottom:10px;
+  box-sizing: content-box;
 }
