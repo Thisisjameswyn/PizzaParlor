@@ -9,7 +9,7 @@ function Pizza(size, topping1, topping2, topping3)  {
 
 Pizza.prototype.calcCharge = function() {
   console.log(this.size);
-  if(this.size != 0) {
+  if(this.size > 0) {
     this.price = this.size;
     if(this.toppingAmount == 3) {
       this.price += 6;
@@ -30,7 +30,7 @@ $(document).ready(function()  {
     let pizzaPie = new Pizza(parseInt($("#size").val()),parseInt($("#topping1").val()),parseInt($("#topping2").val()),parseInt($("#topping3").val()));
     
     pizzaPie.calcCharge();
-    
-    $("#order").text(`We have you booked for ${$("#size option:selected").text()} with ${$("#topping1 option:selected").text()}, the total price is  ${pizzaPie.price} dollars!  Better have my money ready.`)
+    console.log(pizzaPie.size);
+    $("#order").text(`We have you booked for a ${$("#size option:selected").text()} with ${$("#topping1 option:selected").text()}, ${$("#topping2 option:selected").text()} and ${$("#topping3 option:selected").text()} the total price is  ${pizzaPie.price} dollars!  Better have my money ready.`)
   });
 });
